@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="60dp">
+
+    <Button
+        android:id="@+id/btn_sign_out"
+        android:layout_width="124dp"
+        android:layout_height="34dp"
+        android:layout_below="@+id/txt_address"
+        android:layout_marginTop="12dp"
+        android:textAllCaps="false"
+        android:layout_toEndOf="@+id/profile_image"
+        android:background="@drawable/rounded_button"
+        android:text="Sign out" />
+
+    <Button
+        android:id="@+id/btn_message"
+        android:layout_width="124dp"
+        android:layout_height="34dp"
+        android:layout_below="@+id/txt_address"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="8dp"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:layout_toEndOf="@+id/btn_sign_out"
+        android:background="@drawable/gradient_button"
+        android:text="Show QR" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/profile_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="12dp"
+        fresco:placeholderImage="@drawable/ic_user"
+        fresco:roundAsCircle="true"/>
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="12dp"
+        android:layout_toEndOf="@+id/profile_image"
+        android:text="Display Name"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txt_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_name"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="11dp"
+        android:layout_toEndOf="@+id/profile_image"
+        android:text="India"
+        android:textColor="@color/gray_52" />
+
+</RelativeLayout>

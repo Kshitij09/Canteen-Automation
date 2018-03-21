@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/breakfast"
+        android:icon="@drawable/ic_breakfast"
+        android:title="@string/breakfast" />
+
+    <item
+        android:id="@+id/lunch"
+        android:icon="@drawable/ic_lunch"
+        android:title="@string/lunch" />
+
+    <item
+        android:id="@+id/dinner"
+        android:icon="@drawable/ic_dinner"
+        android:title="@string/dinner" />
+
+    <item
+        android:id="@+id/scheduled"
+        android:icon="@drawable/ic_scheduled"
+        android:title="@string/scheduled" />
+
+    <item
+        android:id="@+id/info"
+        android:icon="@drawable/ic_info"
+        android:title="@string/info" />
+
+</menu>
